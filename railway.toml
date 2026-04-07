@@ -1,0 +1,27 @@
+# Railway Configuration
+# DO NOT RUN npm install in build command - it's automatic
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+# ═══════════════════════════════════════════════════════════════
+# IMPORTANT: Add Volume in Railway Dashboard for persistent session!
+# 
+# Steps:
+# 1. Go to Railway Dashboard -> Your Project -> Service
+# 2. Click "Settings" tab
+# 3. Scroll to "Volumes" section
+# 4. Click "Add Volume"
+# 5. Mount Path: /app/sessions
+# 6. Name: sessions
+# 7. Redeploy
+#
+# This will persist your WhatsApp session across deploys!
+# ═══════════════════════════════════════════════════════════════

@@ -1,0 +1,36 @@
+{
+    "name": "sanka-bot-deployer",
+    "version": "1.0.0",
+    "description": "WhatsApp Bot with Web Panel using Sanka-Baileys",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js"
+    },
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "sanka-baileys",
+        "whatsapp-bot"
+    ],
+    "author": "Sanka Bot Deployer",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^17.3.1",
+        "express": "^4.22.1",
+        "link-preview-js": "^3.2.0",
+        "mongoose": "^8.23.0",
+        "pino": "^8.21.0",
+        "qrcode": "^1.5.4",
+        "sanka-baileyss": "file:patches/sanka-baileyss-2.5.5.tgz",
+        "socket.io": "^4.8.3",
+        "string-similarity": "^4.0.4"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    }
+}

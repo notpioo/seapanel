@@ -1,0 +1,1867 @@
+{
+  "resources": [
+    "Peat",
+    "Shell",
+    "Bone",
+    "Silt",
+    "Dust",
+    "Dirt",
+    "Stone",
+    "Sand",
+    "Pebbles",
+    "Ash",
+    "Gravel",
+    "Salt",
+    "Ice",
+    "Pumice",
+    "Mud",
+    "Sandstone",
+    "Cobblestone",
+    "Coal",
+    "Slate",
+    "Shale",
+    "Loam",
+    "Clay",
+    "Tuff",
+    "Geode",
+    "Chalk",
+    "Flint",
+    "Fossil",
+    "Limestone",
+    "Amber",
+    "Granite",
+    "Crystal Shard",
+    "Basalt",
+    "Copper",
+    "Aluminum",
+    "Tin",
+    "Bronze",
+    "Meteorite",
+    "Lead",
+    "Lodestone",
+    "Iron",
+    "Pyrite",
+    "Borax",
+    "Brass",
+    "Alum",
+    "Galena",
+    "Niter",
+    "Zinc",
+    "Sulfur",
+    "Magnesium",
+    "Phosphorus",
+    "Nickel",
+    "Mica",
+    "Lithium",
+    "Gypsum",
+    "Bauxite",
+    "Beryllium",
+    "Obsidian Shard",
+    "Quartz",
+    "Mercury",
+    "Quartz Dust",
+    "Cobaltite",
+    "Slag",
+    "Steel",
+    "Chrome",
+    "Silver",
+    "Lapis Lazuli",
+    "Fluorite",
+    "Beryl",
+    "Cobalt",
+    "Zoisite",
+    "Malachite",
+    "Olivine",
+    "Citrine",
+    "Turquoise",
+    "Garnet Rough",
+    "Gold",
+    "Spinel Rough",
+    "Tungsten",
+    "Corundum",
+    "Spinel",
+    "Chalcedony",
+    "Platinum",
+    "Agate",
+    "Rhodium",
+    "Jasper",
+    "Titanium",
+    "Onyx Rough",
+    "Bismuth",
+    "Hematite",
+    "Amethyst",
+    "Magnetite",
+    "Aquamarine",
+    "Palladium",
+    "Iridium",
+    "Tanzanite",
+    "Osmium",
+    "Jade",
+    "Morganite",
+    "Aquamarine Rough",
+    "Onyx",
+    "Bloodstone",
+    "Topaz Rough",
+    "Topaz",
+    "Moonstone",
+    "Sapphire Rough",
+    "Cinnabar",
+    "Ruby Rough",
+    "Ruby",
+    "Emerald Rough",
+    "Peridot",
+    "Sapphire",
+    "Diamond Rough",
+    "Opal",
+    "Moissanite",
+    "Tourmaline",
+    "Emerald",
+    "Lonsdaleite",
+    "Zircon",
+    "Painite Rough",
+    "Diamond",
+    "Tanzanite Rough",
+    "Garnet",
+    "Benitoite",
+    "Alexandrite",
+    "Red Beryl",
+    "Sunstone",
+    "Painite",
+    "Taaffeite",
+    "Mythril",
+    "Neutronium",
+    "Luminite",
+    "Obsidian",
+    "Antimatter",
+    "Orichalcum",
+    "Tachyon Dust",
+    "Voidstone",
+    "Adamantium",
+    "Ethereal Crystal",
+    "Starmetal",
+    "Astralium",
+    "Dragonite",
+    "Vibranium",
+    "Zenith Shard",
+    "Phoenix Tear",
+    "Solarium",
+    "Leviathan Scale",
+    "Darkmatter",
+    "Yggdrasil Wood",
+    "Omnium",
+    "Galactium",
+    "Philosopher Stone",
+    "Quantum Geode",
+    "Celestium",
+    "Dark Energy",
+    "Aetherium",
+    "Cosmic String",
+    "Chronium",
+    "Singularity Dust",
+    "God Particle",
+    "Infinity Core",
+    "Petrified Root",
+    "Iron-Enriched Silex",
+    "Mossy Quartz",
+    "Cavernous Marl",
+    "Shimmering Mica",
+    "Hardened Resin",
+    "Sulphur Glaze",
+    "Vitreous Schist",
+    "Fluorescent Spinel",
+    "Paleite Fragment",
+    "Prismatic Calcite",
+    "Azureite Shard",
+    "Veridian Garnet",
+    "Stellar Corundum",
+    "Indigo Zircon",
+    "Rose Beryl",
+    "Void-Infused Slate",
+    "Ethereal Pyrite",
+    "Dimensional Nickel",
+    "Shadow Graphite",
+    "Abyssal Geode",
+    "Noxious Cobalt",
+    "Phasing Chromium",
+    "Glinting Obsidian",
+    "Solarite Ore",
+    "Lunar Silver",
+    "Aetheric Brass",
+    "Radiant Tungsten",
+    "Nebula Palladium",
+    "Star-Forged Titanium",
+    "Astral Platinum",
+    "Celestial Mercury",
+    "Zenithite Alloy",
+    "Chrono-Steel",
+    "Infinity Core Shard",
+    "Galactic Orichalcum",
+    "Phoenix Cinder",
+    "Temporal Adamantium",
+    "God-Metal Essence"
+  ],
+  "floors": [
+    {
+      "number": 1,
+      "name": "Surface",
+      "resources": [
+        "Peat",
+        "Shell",
+        "Bone",
+        "Silt",
+        "Dust",
+        "Dirt",
+        "Stone",
+        "Sand",
+        "Pebbles",
+        "Ash",
+        "Gravel",
+        "Salt",
+        "Ice",
+        "Pumice",
+        "Mud",
+        "Sandstone"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Topsoil",
+      "resources": [
+        "Dirt",
+        "Stone",
+        "Sand",
+        "Pebbles",
+        "Ash",
+        "Gravel",
+        "Salt",
+        "Ice",
+        "Pumice",
+        "Mud",
+        "Sandstone",
+        "Cobblestone",
+        "Coal",
+        "Slate",
+        "Shale",
+        "Loam"
+      ]
+    },
+    {
+      "number": 3,
+      "name": "Gravel Pits",
+      "resources": [
+        "Gravel",
+        "Salt",
+        "Ice",
+        "Pumice",
+        "Mud",
+        "Sandstone",
+        "Cobblestone",
+        "Coal",
+        "Slate",
+        "Shale",
+        "Loam",
+        "Clay",
+        "Tuff",
+        "Geode",
+        "Chalk",
+        "Flint"
+      ]
+    },
+    {
+      "number": 4,
+      "name": "Coal Mines",
+      "resources": [
+        "Sandstone",
+        "Cobblestone",
+        "Coal",
+        "Slate",
+        "Shale",
+        "Loam",
+        "Clay",
+        "Tuff",
+        "Geode",
+        "Chalk",
+        "Flint",
+        "Fossil",
+        "Limestone",
+        "Amber",
+        "Granite",
+        "Crystal Shard"
+      ]
+    },
+    {
+      "number": 5,
+      "name": "Limestone Caves",
+      "resources": [
+        "Loam",
+        "Clay",
+        "Tuff",
+        "Geode",
+        "Chalk",
+        "Flint",
+        "Fossil",
+        "Limestone",
+        "Amber",
+        "Granite",
+        "Crystal Shard",
+        "Basalt",
+        "Copper",
+        "Aluminum",
+        "Tin",
+        "Bronze"
+      ]
+    },
+    {
+      "number": 6,
+      "name": "Copper Veins",
+      "resources": [
+        "Flint",
+        "Fossil",
+        "Limestone",
+        "Amber",
+        "Granite",
+        "Crystal Shard",
+        "Basalt",
+        "Copper",
+        "Aluminum",
+        "Tin",
+        "Bronze",
+        "Meteorite",
+        "Lead",
+        "Lodestone",
+        "Iron",
+        "Pyrite"
+      ]
+    },
+    {
+      "number": 7,
+      "name": "Iron Depths",
+      "resources": [
+        "Crystal Shard",
+        "Basalt",
+        "Copper",
+        "Aluminum",
+        "Tin",
+        "Bronze",
+        "Meteorite",
+        "Lead",
+        "Lodestone",
+        "Iron",
+        "Pyrite",
+        "Borax",
+        "Brass",
+        "Alum",
+        "Galena",
+        "Niter"
+      ]
+    },
+    {
+      "number": 8,
+      "name": "Industrial Tunnels",
+      "resources": [
+        "Bronze",
+        "Meteorite",
+        "Lead",
+        "Lodestone",
+        "Iron",
+        "Pyrite",
+        "Borax",
+        "Brass",
+        "Alum",
+        "Galena",
+        "Niter",
+        "Zinc",
+        "Sulfur",
+        "Magnesium",
+        "Phosphorus",
+        "Nickel"
+      ]
+    },
+    {
+      "number": 9,
+      "name": "Alloy Basin",
+      "resources": [
+        "Pyrite",
+        "Borax",
+        "Brass",
+        "Alum",
+        "Galena",
+        "Niter",
+        "Zinc",
+        "Sulfur",
+        "Magnesium",
+        "Phosphorus",
+        "Nickel",
+        "Mica",
+        "Lithium",
+        "Gypsum",
+        "Bauxite",
+        "Beryllium"
+      ]
+    },
+    {
+      "number": 10,
+      "name": "Quartz Hollows",
+      "resources": [
+        "Niter",
+        "Zinc",
+        "Sulfur",
+        "Magnesium",
+        "Phosphorus",
+        "Nickel",
+        "Mica",
+        "Lithium",
+        "Gypsum",
+        "Bauxite",
+        "Beryllium",
+        "Obsidian Shard",
+        "Quartz",
+        "Mercury",
+        "Quartz Dust",
+        "Cobaltite"
+      ]
+    },
+    {
+      "number": 11,
+      "name": "Steel Core",
+      "resources": [
+        "Nickel",
+        "Mica",
+        "Lithium",
+        "Gypsum",
+        "Bauxite",
+        "Beryllium",
+        "Obsidian Shard",
+        "Quartz",
+        "Mercury",
+        "Quartz Dust",
+        "Cobaltite",
+        "Slag",
+        "Steel",
+        "Chrome",
+        "Silver",
+        "Lapis Lazuli"
+      ]
+    },
+    {
+      "number": 12,
+      "name": "Crystal Caves",
+      "resources": [
+        "Beryllium",
+        "Obsidian Shard",
+        "Quartz",
+        "Mercury",
+        "Quartz Dust",
+        "Cobaltite",
+        "Slag",
+        "Steel",
+        "Chrome",
+        "Silver",
+        "Lapis Lazuli",
+        "Fluorite",
+        "Beryl",
+        "Cobalt",
+        "Zoisite",
+        "Malachite"
+      ]
+    },
+    {
+      "number": 13,
+      "name": "Golden Grottos",
+      "resources": [
+        "Cobaltite",
+        "Slag",
+        "Steel",
+        "Chrome",
+        "Silver",
+        "Lapis Lazuli",
+        "Fluorite",
+        "Beryl",
+        "Cobalt",
+        "Zoisite",
+        "Malachite",
+        "Olivine",
+        "Citrine",
+        "Turquoise",
+        "Garnet Rough",
+        "Gold"
+      ]
+    },
+    {
+      "number": 14,
+      "name": "Platinum Shaft",
+      "resources": [
+        "Lapis Lazuli",
+        "Fluorite",
+        "Beryl",
+        "Cobalt",
+        "Zoisite",
+        "Malachite",
+        "Olivine",
+        "Citrine",
+        "Turquoise",
+        "Garnet Rough",
+        "Gold",
+        "Spinel Rough",
+        "Tungsten",
+        "Corundum",
+        "Spinel",
+        "Chalcedony"
+      ]
+    },
+    {
+      "number": 15,
+      "name": "Amethyst Crevice",
+      "resources": [
+        "Malachite",
+        "Olivine",
+        "Citrine",
+        "Turquoise",
+        "Garnet Rough",
+        "Gold",
+        "Spinel Rough",
+        "Tungsten",
+        "Corundum",
+        "Spinel",
+        "Chalcedony",
+        "Platinum",
+        "Agate",
+        "Rhodium",
+        "Jasper",
+        "Titanium"
+      ]
+    },
+    {
+      "number": 16,
+      "name": "Tanzanite Depths",
+      "resources": [
+        "Gold",
+        "Spinel Rough",
+        "Tungsten",
+        "Corundum",
+        "Spinel",
+        "Chalcedony",
+        "Platinum",
+        "Agate",
+        "Rhodium",
+        "Jasper",
+        "Titanium",
+        "Onyx Rough",
+        "Bismuth",
+        "Hematite",
+        "Amethyst",
+        "Magnetite"
+      ]
+    },
+    {
+      "number": 17,
+      "name": "Onyx Chambers",
+      "resources": [
+        "Chalcedony",
+        "Platinum",
+        "Agate",
+        "Rhodium",
+        "Jasper",
+        "Titanium",
+        "Onyx Rough",
+        "Bismuth",
+        "Hematite",
+        "Amethyst",
+        "Magnetite",
+        "Aquamarine",
+        "Palladium",
+        "Iridium",
+        "Tanzanite",
+        "Osmium"
+      ]
+    },
+    {
+      "number": 18,
+      "name": "Ruby Core",
+      "resources": [
+        "Titanium",
+        "Onyx Rough",
+        "Bismuth",
+        "Hematite",
+        "Amethyst",
+        "Magnetite",
+        "Aquamarine",
+        "Palladium",
+        "Iridium",
+        "Tanzanite",
+        "Osmium",
+        "Jade",
+        "Morganite",
+        "Aquamarine Rough",
+        "Onyx",
+        "Bloodstone"
+      ]
+    },
+    {
+      "number": 19,
+      "name": "Emerald Vault",
+      "resources": [
+        "Magnetite",
+        "Aquamarine",
+        "Palladium",
+        "Iridium",
+        "Tanzanite",
+        "Osmium",
+        "Jade",
+        "Morganite",
+        "Aquamarine Rough",
+        "Onyx",
+        "Bloodstone",
+        "Topaz Rough",
+        "Topaz",
+        "Moonstone",
+        "Sapphire Rough",
+        "Cinnabar"
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Diamond Crest",
+      "resources": [
+        "Osmium",
+        "Jade",
+        "Morganite",
+        "Aquamarine Rough",
+        "Onyx",
+        "Bloodstone",
+        "Topaz Rough",
+        "Topaz",
+        "Moonstone",
+        "Sapphire Rough",
+        "Cinnabar",
+        "Ruby Rough",
+        "Ruby",
+        "Emerald Rough",
+        "Peridot",
+        "Sapphire"
+      ]
+    },
+    {
+      "number": 21,
+      "name": "Magma Chamber",
+      "resources": [
+        "Bloodstone",
+        "Topaz Rough",
+        "Topaz",
+        "Moonstone",
+        "Sapphire Rough",
+        "Cinnabar",
+        "Ruby Rough",
+        "Ruby",
+        "Emerald Rough",
+        "Peridot",
+        "Sapphire",
+        "Diamond Rough",
+        "Opal",
+        "Moissanite",
+        "Tourmaline",
+        "Emerald"
+      ]
+    },
+    {
+      "number": 22,
+      "name": "Underworld",
+      "resources": [
+        "Cinnabar",
+        "Ruby Rough",
+        "Ruby",
+        "Emerald Rough",
+        "Peridot",
+        "Sapphire",
+        "Diamond Rough",
+        "Opal",
+        "Moissanite",
+        "Tourmaline",
+        "Emerald",
+        "Lonsdaleite",
+        "Zircon",
+        "Painite Rough",
+        "Diamond",
+        "Tanzanite Rough"
+      ]
+    },
+    {
+      "number": 23,
+      "name": "Abyssal Depths",
+      "resources": [
+        "Sapphire",
+        "Diamond Rough",
+        "Opal",
+        "Moissanite",
+        "Tourmaline",
+        "Emerald",
+        "Lonsdaleite",
+        "Zircon",
+        "Painite Rough",
+        "Diamond",
+        "Tanzanite Rough",
+        "Garnet",
+        "Benitoite",
+        "Alexandrite",
+        "Red Beryl",
+        "Sunstone"
+      ]
+    },
+    {
+      "number": 24,
+      "name": "Void Dimension",
+      "resources": [
+        "Emerald",
+        "Lonsdaleite",
+        "Zircon",
+        "Painite Rough",
+        "Diamond",
+        "Tanzanite Rough",
+        "Garnet",
+        "Benitoite",
+        "Alexandrite",
+        "Red Beryl",
+        "Sunstone",
+        "Painite",
+        "Taaffeite",
+        "Mythril",
+        "Neutronium",
+        "Luminite"
+      ]
+    },
+    {
+      "number": 25,
+      "name": "Cosmic Rift",
+      "resources": [
+        "Tanzanite Rough",
+        "Garnet",
+        "Benitoite",
+        "Alexandrite",
+        "Red Beryl",
+        "Sunstone",
+        "Painite",
+        "Taaffeite",
+        "Mythril",
+        "Neutronium",
+        "Luminite",
+        "Obsidian",
+        "Antimatter",
+        "Orichalcum",
+        "Tachyon Dust",
+        "Voidstone"
+      ]
+    },
+    {
+      "number": 26,
+      "name": "Astral Plane",
+      "resources": [
+        "Sunstone",
+        "Painite",
+        "Taaffeite",
+        "Mythril",
+        "Neutronium",
+        "Luminite",
+        "Obsidian",
+        "Antimatter",
+        "Orichalcum",
+        "Tachyon Dust",
+        "Voidstone",
+        "Adamantium",
+        "Ethereal Crystal",
+        "Starmetal",
+        "Astralium",
+        "Dragonite"
+      ]
+    },
+    {
+      "number": 27,
+      "name": "Chronos Stream",
+      "resources": [
+        "Luminite",
+        "Obsidian",
+        "Antimatter",
+        "Orichalcum",
+        "Tachyon Dust",
+        "Voidstone",
+        "Adamantium",
+        "Ethereal Crystal",
+        "Starmetal",
+        "Astralium",
+        "Dragonite",
+        "Vibranium",
+        "Zenith Shard",
+        "Phoenix Tear",
+        "Solarium",
+        "Leviathan Scale"
+      ]
+    },
+    {
+      "number": 28,
+      "name": "Eternity Nexus",
+      "resources": [
+        "Voidstone",
+        "Adamantium",
+        "Ethereal Crystal",
+        "Starmetal",
+        "Astralium",
+        "Dragonite",
+        "Vibranium",
+        "Zenith Shard",
+        "Phoenix Tear",
+        "Solarium",
+        "Leviathan Scale",
+        "Darkmatter",
+        "Yggdrasil Wood",
+        "Omnium",
+        "Galactium",
+        "Philosopher Stone"
+      ]
+    },
+    {
+      "number": 29,
+      "name": "The Singularity",
+      "resources": [
+        "Dragonite",
+        "Vibranium",
+        "Zenith Shard",
+        "Phoenix Tear",
+        "Solarium",
+        "Leviathan Scale",
+        "Darkmatter",
+        "Yggdrasil Wood",
+        "Omnium",
+        "Galactium",
+        "Philosopher Stone",
+        "Quantum Geode",
+        "Celestium",
+        "Dark Energy",
+        "Aetherium",
+        "Cosmic String"
+      ]
+    },
+    {
+      "number": 30,
+      "name": "Event Horizon",
+      "resources": [
+        "Leviathan Scale",
+        "Darkmatter",
+        "Yggdrasil Wood",
+        "Omnium",
+        "Galactium",
+        "Philosopher Stone",
+        "Quantum Geode",
+        "Celestium",
+        "Dark Energy",
+        "Aetherium",
+        "Cosmic String",
+        "Chronium",
+        "Singularity Dust",
+        "God Particle",
+        "Infinity Core"
+      ]
+    }
+  ],
+  "caves": [
+    {
+      "number": 1,
+      "name": "Goblin Cavern",
+      "resources": [
+        "Petrified Root",
+        "Iron-Enriched Silex",
+        "Mossy Quartz",
+        "Cavernous Marl",
+        "Shimmering Mica",
+        "Hardened Resin",
+        "Sulphur Glaze",
+        "Vitreous Schist"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Crystal Depths",
+      "resources": [
+        "Fluorescent Spinel",
+        "Paleite Fragment",
+        "Prismatic Calcite",
+        "Azureite Shard",
+        "Veridian Garnet",
+        "Stellar Corundum",
+        "Indigo Zircon",
+        "Rose Beryl"
+      ]
+    },
+    {
+      "number": 3,
+      "name": "Void Descent",
+      "resources": [
+        "Void-Infused Slate",
+        "Ethereal Pyrite",
+        "Dimensional Nickel",
+        "Shadow Graphite",
+        "Abyssal Geode",
+        "Noxious Cobalt",
+        "Phasing Chromium",
+        "Glinting Obsidian"
+      ]
+    },
+    {
+      "number": 4,
+      "name": "Celestial Sanctum",
+      "resources": [
+        "Solarite Ore",
+        "Lunar Silver",
+        "Aetheric Brass",
+        "Radiant Tungsten",
+        "Nebula Palladium",
+        "Star-Forged Titanium",
+        "Astral Platinum",
+        "Celestial Mercury"
+      ]
+    },
+    {
+      "number": 5,
+      "name": "Eternity Forge",
+      "resources": [
+        "Zenithite Alloy",
+        "Chrono-Steel",
+        "Infinity Core Shard",
+        "Singularity Dust",
+        "Galactic Orichalcum",
+        "Phoenix Cinder",
+        "Temporal Adamantium",
+        "God-Metal Essence"
+      ]
+    }
+  ],
+  "pickaxeLevels": [
+    {
+      "level": 1,
+      "name": "Wooden Pickaxe",
+      "upgradeCost": 0,
+      "requiredItems": []
+    },
+    {
+      "level": 2,
+      "name": "Stone Pickaxe",
+      "upgradeCost": 450,
+      "requiredItems": [
+        {
+          "name": "Cobblestone",
+          "amount": 20,
+          "_id": "69a56d385d603d25cfa77e4a"
+        },
+        {
+          "name": "Shell",
+          "amount": 25,
+          "_id": "69a56d385d603d25cfa77e4b"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Copper Pickaxe",
+      "upgradeCost": 2067,
+      "requiredItems": [
+        {
+          "name": "Gravel",
+          "amount": 29,
+          "_id": "69a56d385d603d25cfa77e4d"
+        },
+        {
+          "name": "Ash",
+          "amount": 37,
+          "_id": "69a56d385d603d25cfa77e4e"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "Iron Pickaxe",
+      "upgradeCost": 5044,
+      "requiredItems": [
+        {
+          "name": "Slate",
+          "amount": 47,
+          "_id": "69a56d385d603d25cfa77e50"
+        },
+        {
+          "name": "Stone",
+          "amount": 46,
+          "_id": "69a56d385d603d25cfa77e51"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "Silver Pickaxe",
+      "upgradeCost": 9500,
+      "requiredItems": [
+        {
+          "name": "Shale",
+          "amount": 51,
+          "_id": "69a56d385d603d25cfa77e53"
+        },
+        {
+          "name": "Sandstone",
+          "amount": 51,
+          "_id": "69a56d385d603d25cfa77e54"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "Gold Pickaxe",
+      "upgradeCost": 15521,
+      "requiredItems": [
+        {
+          "name": "Limestone",
+          "amount": 68,
+          "_id": "69a56d385d603d25cfa77e56"
+        },
+        {
+          "name": "Cobblestone",
+          "amount": 78,
+          "_id": "69a56d385d603d25cfa77e57"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "name": "Platinum Pickaxe",
+      "upgradeCost": 23181,
+      "requiredItems": [
+        {
+          "name": "Copper",
+          "amount": 90,
+          "_id": "69a56d385d603d25cfa77e59"
+        },
+        {
+          "name": "Loam",
+          "amount": 94,
+          "_id": "69a56d385d603d25cfa77e5a"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "name": "Diamond Pickaxe",
+      "upgradeCost": 32540,
+      "requiredItems": [
+        {
+          "name": "Iron",
+          "amount": 93,
+          "_id": "69a56d385d603d25cfa77e5c"
+        },
+        {
+          "name": "Flint",
+          "amount": 99,
+          "_id": "69a56d385d603d25cfa77e5d"
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "name": "Emerald Pickaxe",
+      "upgradeCost": 43652,
+      "requiredItems": [
+        {
+          "name": "Borax",
+          "amount": 95,
+          "_id": "69a56d385d603d25cfa77e5f"
+        },
+        {
+          "name": "Crystal Shard",
+          "amount": 81,
+          "_id": "69a56d385d603d25cfa77e60"
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "name": "Ruby Pickaxe",
+      "upgradeCost": 56564,
+      "requiredItems": [
+        {
+          "name": "Lodestone",
+          "amount": 115,
+          "_id": "69a56d385d603d25cfa77e62"
+        },
+        {
+          "name": "Aluminum",
+          "amount": 126,
+          "_id": "69a56d385d603d25cfa77e63"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "name": "Sapphire Pickaxe",
+      "upgradeCost": 135000,
+      "requiredItems": [
+        {
+          "name": "Gypsum",
+          "amount": 237,
+          "_id": "69a56d385d603d25cfa77e65"
+        },
+        {
+          "name": "Granite",
+          "amount": 273,
+          "_id": "69a56d385d603d25cfa77e66"
+        },
+        {
+          "name": "Shale",
+          "amount": 260,
+          "_id": "69a56d385d603d25cfa77e67"
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "name": "Topaz Pickaxe",
+      "upgradeCost": 208755,
+      "requiredItems": [
+        {
+          "name": "Phosphorus",
+          "amount": 255,
+          "_id": "69a56d385d603d25cfa77e69"
+        },
+        {
+          "name": "Lead",
+          "amount": 330,
+          "_id": "69a56d385d603d25cfa77e6a"
+        },
+        {
+          "name": "Sandstone",
+          "amount": 276,
+          "_id": "69a56d385d603d25cfa77e6b"
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "name": "Amethyst Pickaxe",
+      "upgradeCost": 299498,
+      "requiredItems": [
+        {
+          "name": "Quartz Dust",
+          "amount": 315,
+          "_id": "69a56d385d603d25cfa77e6d"
+        },
+        {
+          "name": "Niter",
+          "amount": 338,
+          "_id": "69a56d385d603d25cfa77e6e"
+        },
+        {
+          "name": "Basalt",
+          "amount": 366,
+          "_id": "69a56d385d603d25cfa77e6f"
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "name": "Obsidian Pickaxe",
+      "upgradeCost": 403398,
+      "requiredItems": [
+        {
+          "name": "Quartz",
+          "amount": 246,
+          "_id": "69a56d385d603d25cfa77e71"
+        },
+        {
+          "name": "Galena",
+          "amount": 274,
+          "_id": "69a56d385d603d25cfa77e72"
+        },
+        {
+          "name": "Geode",
+          "amount": 340,
+          "_id": "69a56d385d603d25cfa77e73"
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "name": "Titanium Pickaxe",
+      "upgradeCost": 518321,
+      "requiredItems": [
+        {
+          "name": "Beryllium",
+          "amount": 370,
+          "_id": "69a56d385d603d25cfa77e75"
+        },
+        {
+          "name": "Bauxite",
+          "amount": 351,
+          "_id": "69a56d385d603d25cfa77e76"
+        },
+        {
+          "name": "Basalt",
+          "amount": 358,
+          "_id": "69a56d385d603d25cfa77e77"
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "name": "Mythril Pickaxe",
+      "upgradeCost": 642871,
+      "requiredItems": [
+        {
+          "name": "Beryllium",
+          "amount": 325,
+          "_id": "69a56d385d603d25cfa77e79"
+        },
+        {
+          "name": "Niter",
+          "amount": 330,
+          "_id": "69a56d385d603d25cfa77e7a"
+        },
+        {
+          "name": "Lodestone",
+          "amount": 336,
+          "_id": "69a56d385d603d25cfa77e7b"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "name": "Orichalcum Pickaxe",
+      "upgradeCost": 776040,
+      "requiredItems": [
+        {
+          "name": "Garnet Rough",
+          "amount": 423,
+          "_id": "69a56d385d603d25cfa77e7d"
+        },
+        {
+          "name": "Phosphorus",
+          "amount": 439,
+          "_id": "69a56d385d603d25cfa77e7e"
+        },
+        {
+          "name": "Aluminum",
+          "amount": 378,
+          "_id": "69a56d385d603d25cfa77e7f"
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "name": "Adamantite Pickaxe",
+      "upgradeCost": 917062,
+      "requiredItems": [
+        {
+          "name": "Gold",
+          "amount": 367,
+          "_id": "69a56d385d603d25cfa77e81"
+        },
+        {
+          "name": "Lapis Lazuli",
+          "amount": 375,
+          "_id": "69a56d385d603d25cfa77e82"
+        },
+        {
+          "name": "Alum",
+          "amount": 450,
+          "_id": "69a56d385d603d25cfa77e83"
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "name": "Cobalt Pickaxe",
+      "upgradeCost": 1065330,
+      "requiredItems": [
+        {
+          "name": "Gold",
+          "amount": 400,
+          "_id": "69ad7334375fae1ec8cbcd21"
+        },
+        {
+          "name": "Platinum",
+          "amount": 250,
+          "_id": "69ad7334375fae1ec8cbcd22"
+        },
+        {
+          "name": "Petrified Root",
+          "amount": 120,
+          "_id": "69ad7334375fae1ec8cbcd23"
+        },
+        {
+          "name": "Hardened Resin",
+          "amount": 80,
+          "_id": "69ad7334375fae1ec8cbcd24"
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "name": "Palladium Pickaxe",
+      "upgradeCost": 1220348,
+      "requiredItems": [
+        {
+          "name": "Titanium",
+          "amount": 450,
+          "_id": "69ad7334375fae1ec8cbcd25"
+        },
+        {
+          "name": "Bismuth",
+          "amount": 300,
+          "_id": "69ad7334375fae1ec8cbcd26"
+        },
+        {
+          "name": "Iron-Enriched Silex",
+          "amount": 130,
+          "_id": "69ad7334375fae1ec8cbcd27"
+        },
+        {
+          "name": "Sulphur Glaze",
+          "amount": 90,
+          "_id": "69ad7334375fae1ec8cbcd28"
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "name": "Tungsten Pickaxe",
+      "upgradeCost": 1530000,
+      "requiredItems": [
+        {
+          "name": "Amethyst",
+          "amount": 500,
+          "_id": "69ad7334375fae1ec8cbcd29"
+        },
+        {
+          "name": "Diamond",
+          "amount": 40,
+          "_id": "69ad7334375fae1ec8cbcd2a"
+        },
+        {
+          "name": "Mossy Quartz",
+          "amount": 150,
+          "_id": "69ad7334375fae1ec8cbcd2b"
+        },
+        {
+          "name": "Vitreous Schist",
+          "amount": 15,
+          "_id": "69ad7334375fae1ec8cbcd2c"
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "name": "Vibranium Pickaxe",
+      "upgradeCost": 1895657,
+      "requiredItems": [
+        {
+          "name": "Osmium",
+          "amount": 550,
+          "_id": "69ad7334375fae1ec8cbcd2d"
+        },
+        {
+          "name": "Jade",
+          "amount": 350,
+          "_id": "69ad7334375fae1ec8cbcd2e"
+        },
+        {
+          "name": "Petrified Root",
+          "amount": 160,
+          "_id": "69ad7334375fae1ec8cbcd2f"
+        },
+        {
+          "name": "Shimmering Mica",
+          "amount": 50,
+          "_id": "69ad7334375fae1ec8cbcd30"
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "name": "Luminite Pickaxe",
+      "upgradeCost": 2393918,
+      "requiredItems": [
+        {
+          "name": "Emerald",
+          "amount": 600,
+          "_id": "69ad7334375fae1ec8cbcd31"
+        },
+        {
+          "name": "Diamond",
+          "amount": 80,
+          "_id": "69ad7334375fae1ec8cbcd32"
+        },
+        {
+          "name": "Cavernous Marl",
+          "amount": 180,
+          "_id": "69ad7334375fae1ec8cbcd33"
+        },
+        {
+          "name": "Vitreous Schist",
+          "amount": 20,
+          "_id": "69ad7334375fae1ec8cbcd34"
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "name": "Meteorite Pickaxe",
+      "upgradeCost": 3004125,
+      "requiredItems": [
+        {
+          "name": "Platinum",
+          "amount": 650,
+          "_id": "69ad7334375fae1ec8cbcd35"
+        },
+        {
+          "name": "Titanium",
+          "amount": 400,
+          "_id": "69ad7334375fae1ec8cbcd36"
+        },
+        {
+          "name": "Fluorescent Spinel",
+          "amount": 120,
+          "_id": "69ad7334375fae1ec8cbcd37"
+        },
+        {
+          "name": "Azureite Shard",
+          "amount": 40,
+          "_id": "69ad7334375fae1ec8cbcd38"
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "name": "Hellstone Pickaxe",
+      "upgradeCost": 3713874,
+      "requiredItems": [
+        {
+          "name": "Osmium",
+          "amount": 700,
+          "_id": "69ad7334375fae1ec8cbcd39"
+        },
+        {
+          "name": "Amethyst",
+          "amount": 450,
+          "_id": "69ad7334375fae1ec8cbcd3a"
+        },
+        {
+          "name": "Paleite Fragment",
+          "amount": 130,
+          "_id": "69ad7334375fae1ec8cbcd3b"
+        },
+        {
+          "name": "Stellar Corundum",
+          "amount": 45,
+          "_id": "69ad7334375fae1ec8cbcd3c"
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "name": "Elemental Pickaxe",
+      "upgradeCost": 4514568,
+      "requiredItems": [
+        {
+          "name": "Diamond",
+          "amount": 750,
+          "_id": "69ad7334375fae1ec8cbcd3d"
+        },
+        {
+          "name": "Emerald",
+          "amount": 200,
+          "_id": "69ad7334375fae1ec8cbcd3e"
+        },
+        {
+          "name": "Prismatic Calcite",
+          "amount": 150,
+          "_id": "69ad7334375fae1ec8cbcd3f"
+        },
+        {
+          "name": "Indigo Zircon",
+          "amount": 25,
+          "_id": "69ad7334375fae1ec8cbcd40"
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "name": "Celestial Pickaxe",
+      "upgradeCost": 5399760,
+      "requiredItems": [
+        {
+          "name": "Painite",
+          "amount": 800,
+          "_id": "69ad7334375fae1ec8cbcd41"
+        },
+        {
+          "name": "Alexandrite",
+          "amount": 250,
+          "_id": "69ad7334375fae1ec8cbcd42"
+        },
+        {
+          "name": "Veridian Garnet",
+          "amount": 160,
+          "_id": "69ad7334375fae1ec8cbcd43"
+        },
+        {
+          "name": "Rose Beryl",
+          "amount": 20,
+          "_id": "69ad7334375fae1ec8cbcd44"
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "name": "Galactic Pickaxe",
+      "upgradeCost": 6364371,
+      "requiredItems": [
+        {
+          "name": "Taaffeite",
+          "amount": 850,
+          "_id": "69ad7334375fae1ec8cbcd45"
+        },
+        {
+          "name": "Alexandrite",
+          "amount": 300,
+          "_id": "69ad7334375fae1ec8cbcd46"
+        },
+        {
+          "name": "Fluorescent Spinel",
+          "amount": 180,
+          "_id": "69ad7334375fae1ec8cbcd47"
+        },
+        {
+          "name": "Indigo Zircon",
+          "amount": 30,
+          "_id": "69ad7334375fae1ec8cbcd48"
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "name": "Nebula Pickaxe",
+      "upgradeCost": 7404252,
+      "requiredItems": [
+        {
+          "name": "Mythril",
+          "amount": 900,
+          "_id": "69ad7334375fae1ec8cbcd49"
+        },
+        {
+          "name": "Neutronium",
+          "amount": 500,
+          "_id": "69ad7334375fae1ec8cbcd4a"
+        },
+        {
+          "name": "Void-Infused Slate",
+          "amount": 150,
+          "_id": "69ad7334375fae1ec8cbcd4b"
+        },
+        {
+          "name": "Shadow Graphite",
+          "amount": 45,
+          "_id": "69ad7334375fae1ec8cbcd4c"
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "name": "Stardust Pickaxe",
+      "upgradeCost": 8515928,
+      "requiredItems": [
+        {
+          "name": "Luminite",
+          "amount": 950,
+          "_id": "69ad7334375fae1ec8cbcd4d"
+        },
+        {
+          "name": "Adamantium",
+          "amount": 550,
+          "_id": "69ad7334375fae1ec8cbcd4e"
+        },
+        {
+          "name": "Ethereal Pyrite",
+          "amount": 160,
+          "_id": "69ad7334375fae1ec8cbcd4f"
+        },
+        {
+          "name": "Abyssal Geode",
+          "amount": 50,
+          "_id": "69ad7334375fae1ec8cbcd50"
+        }
+      ]
+    },
+    {
+      "level": 31,
+      "name": "Void Pickaxe",
+      "upgradeCost": 9675000,
+      "requiredItems": [
+        {
+          "name": "Antimatter",
+          "amount": 1000,
+          "_id": "69ad7334375fae1ec8cbcd51"
+        },
+        {
+          "name": "Orichalcum",
+          "amount": 600,
+          "_id": "69ad7334375fae1ec8cbcd52"
+        },
+        {
+          "name": "Dimensional Nickel",
+          "amount": 180,
+          "_id": "69ad7334375fae1ec8cbcd53"
+        },
+        {
+          "name": "Noxious Cobalt",
+          "amount": 60,
+          "_id": "69ad7334375fae1ec8cbcd54"
+        }
+      ]
+    },
+    {
+      "level": 32,
+      "name": "Quantum Pickaxe",
+      "upgradeCost": 11700000,
+      "requiredItems": [
+        {
+          "name": "Voidstone",
+          "amount": 1050,
+          "_id": "69ad7334375fae1ec8cbcd55"
+        },
+        {
+          "name": "Dragonite",
+          "amount": 650,
+          "_id": "69ad7334375fae1ec8cbcd56"
+        },
+        {
+          "name": "Shadow Graphite",
+          "amount": 200,
+          "_id": "69ad7334375fae1ec8cbcd57"
+        },
+        {
+          "name": "Phasing Chromium",
+          "amount": 20,
+          "_id": "69ad7334375fae1ec8cbcd58"
+        }
+      ]
+    },
+    {
+      "level": 33,
+      "name": "Antimatter Pickaxe",
+      "upgradeCost": 15075000,
+      "requiredItems": [
+        {
+          "name": "Vibranium",
+          "amount": 1100,
+          "_id": "69ad7334375fae1ec8cbcd59"
+        },
+        {
+          "name": "Zenith Shard",
+          "amount": 700,
+          "_id": "69ad7334375fae1ec8cbcd5a"
+        },
+        {
+          "name": "Abyssal Geode",
+          "amount": 220,
+          "_id": "69ad7334375fae1ec8cbcd5b"
+        },
+        {
+          "name": "Glinting Obsidian",
+          "amount": 15,
+          "_id": "69ad7334375fae1ec8cbcd5c"
+        }
+      ]
+    },
+    {
+      "level": 34,
+      "name": "Tachyon Pickaxe",
+      "upgradeCost": 19800000,
+      "requiredItems": [
+        {
+          "name": "Solarium",
+          "amount": 1120,
+          "_id": "69ad7334375fae1ec8cbcd5d"
+        },
+        {
+          "name": "Phoenix Tear",
+          "amount": 750,
+          "_id": "69ad7334375fae1ec8cbcd5e"
+        },
+        {
+          "name": "Solarite Ore",
+          "amount": 130,
+          "_id": "69ad7334375fae1ec8cbcd5f"
+        },
+        {
+          "name": "Radiant Tungsten",
+          "amount": 35,
+          "_id": "69ad7334375fae1ec8cbcd60"
+        }
+      ]
+    },
+    {
+      "level": 35,
+      "name": "Neutronium Pickaxe",
+      "upgradeCost": 25875000,
+      "requiredItems": [
+        {
+          "name": "Leviathan Scale",
+          "amount": 1140,
+          "_id": "69ad7334375fae1ec8cbcd61"
+        },
+        {
+          "name": "Darkmatter",
+          "amount": 800,
+          "_id": "69ad7334375fae1ec8cbcd62"
+        },
+        {
+          "name": "Lunar Silver",
+          "amount": 150,
+          "_id": "69ad7334375fae1ec8cbcd63"
+        },
+        {
+          "name": "Nebula Palladium",
+          "amount": 45,
+          "_id": "69ad7334375fae1ec8cbcd64"
+        }
+      ]
+    },
+    {
+      "level": 36,
+      "name": "Singularity Pickaxe",
+      "upgradeCost": 33300000,
+      "requiredItems": [
+        {
+          "name": "Omnium",
+          "amount": 1160,
+          "_id": "69ad7334375fae1ec8cbcd65"
+        },
+        {
+          "name": "Galactium",
+          "amount": 850,
+          "_id": "69ad7334375fae1ec8cbcd66"
+        },
+        {
+          "name": "Aetheric Brass",
+          "amount": 160,
+          "_id": "69ad7334375fae1ec8cbcd67"
+        },
+        {
+          "name": "Star-Forged Titanium",
+          "amount": 55,
+          "_id": "69ad7334375fae1ec8cbcd68"
+        }
+      ]
+    },
+    {
+      "level": 37,
+      "name": "Event Horizon Pickaxe",
+      "upgradeCost": 42075000,
+      "requiredItems": [
+        {
+          "name": "Philosopher Stone",
+          "amount": 1180,
+          "_id": "69ad7334375fae1ec8cbcd69"
+        },
+        {
+          "name": "Celestium",
+          "amount": 900,
+          "_id": "69ad7334375fae1ec8cbcd6a"
+        },
+        {
+          "name": "Nebula Palladium",
+          "amount": 170,
+          "_id": "69ad7334375fae1ec8cbcd6b"
+        },
+        {
+          "name": "Astral Platinum",
+          "amount": 12,
+          "_id": "69ad7334375fae1ec8cbcd6c"
+        }
+      ]
+    },
+    {
+      "level": 38,
+      "name": "Genesis Pickaxe",
+      "upgradeCost": 52200000,
+      "requiredItems": [
+        {
+          "name": "Cosmic String",
+          "amount": 1200,
+          "_id": "69ad7334375fae1ec8cbcd6d"
+        },
+        {
+          "name": "Chronium",
+          "amount": 950,
+          "_id": "69ad7334375fae1ec8cbcd6e"
+        },
+        {
+          "name": "Star-Forged Titanium",
+          "amount": 180,
+          "_id": "69ad7334375fae1ec8cbcd6f"
+        },
+        {
+          "name": "Celestial Mercury",
+          "amount": 8,
+          "_id": "69ad7334375fae1ec8cbcd70"
+        }
+      ]
+    },
+    {
+      "level": 39,
+      "name": "Alpha Pickaxe",
+      "upgradeCost": 63675000,
+      "requiredItems": [
+        {
+          "name": "Singularity Dust",
+          "amount": 1220,
+          "_id": "69ad7334375fae1ec8cbcd71"
+        },
+        {
+          "name": "God Particle",
+          "amount": 980,
+          "_id": "69ad7334375fae1ec8cbcd72"
+        },
+        {
+          "name": "Zenithite Alloy",
+          "amount": 90,
+          "_id": "69ad7334375fae1ec8cbcd73"
+        },
+        {
+          "name": "Singularity Dust",
+          "amount": 15,
+          "_id": "69ad7334375fae1ec8cbcd74"
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "name": "Omni-Breaker",
+      "upgradeCost": 76500000,
+      "requiredItems": [
+        {
+          "name": "Infinity Core",
+          "amount": 1250,
+          "_id": "69ad7334375fae1ec8cbcd75"
+        },
+        {
+          "name": "God Particle",
+          "amount": 1000,
+          "_id": "69ad7334375fae1ec8cbcd76"
+        },
+        {
+          "name": "God-Metal Essence",
+          "amount": 10,
+          "_id": "69ad7334375fae1ec8cbcd77"
+        },
+        {
+          "name": "Temporal Adamantium",
+          "amount": 30,
+          "_id": "69ad7334375fae1ec8cbcd78"
+        }
+      ]
+    }
+  ]
+}
