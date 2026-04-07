@@ -9,7 +9,7 @@ const Logger = require('../../utils/logger');
 const logger = new Logger('AIService');
 
 // Dashscope OpenAI-compatible endpoint
-const QWEN_API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
+const QWEN_API_URL = 'https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions';
 
 class AIService {
     constructor() {
