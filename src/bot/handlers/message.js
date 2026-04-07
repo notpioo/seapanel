@@ -356,6 +356,13 @@ class MessageHandler {
                 return;
             }
 
+            // Send typing indicator (composing...)
+            try {
+                await this.socket.sendPresenceUpdate('composing', jid);
+            } catch (e) {
+                // Ignore presence errors
+            }
+
             const senderName = message.pushName || 'User';
 
             // Call Qwen API with chat history
@@ -378,9 +385,19 @@ class MessageHandler {
 
             // Reply to the message
             await this.reply(jid, aiReply, message);
+
+            // Stop typing indicator
+            try {
+                await this.socket.sendPresenceUpdate('paused', jid);
+            } catch (e) {
+                // Ignore presence errors
+            }
         } catch (error) {
             logger.error('AI Mode error:', error.message);
-            // Don't reply with error to avoid spamming the group
+            // Stop typing on error too
+            try {
+                await this.socket.sendPresenceUpdate('paused', jid);
+            } catch (e) {}
         }
     }
 
