@@ -16,8 +16,9 @@ RUN apk add --no-cache \
     git \
     curl
 
-# Copy package files
+# Copy package files and local patches
 COPY package*.json ./
+COPY patches ./patches
 
 # Install dependencies (not production to ensure all deps are installed)
 RUN npm install --legacy-peer-deps
