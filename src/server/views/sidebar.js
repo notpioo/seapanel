@@ -44,6 +44,7 @@ module.exports = {
                     { id: 'settings', label: 'Bot Settings', href: '/settings', icon: '⚙️' },
                     { id: 'mining-config', label: 'Mining Config', href: '/mining-config', icon: '🔧' },
                     { id: 'rpg-config', label: 'RPG Config', href: '/rpg-config', icon: '🎮' },
+                    { id: 'dungeon-config', label: 'Dungeon Config', href: '/dungeon-config', icon: '🗼' },
                     { id: 'casino-config', label: 'Casino Config', href: '/casino-config', icon: '🎰' },
                     { id: 'pass-config', label: 'Pass Config', href: '/pass-config', icon: '🌟' },
                 ]

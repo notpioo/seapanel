@@ -17,7 +17,10 @@ const rpgPlayerSchema = new mongoose.Schema({
     relics: [{ type: String }],
 
     // Inventory
-    inventory: { type: Map, of: Number, default: {} }
+    inventory: { type: Map, of: Number, default: {} },
+
+    // Dungeon Progress
+    dungeonFloor: { type: Number, default: 1 },
 
 }, { timestamps: true });
 

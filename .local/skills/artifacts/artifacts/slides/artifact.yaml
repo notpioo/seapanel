@@ -26,7 +26,6 @@ service_configs:
 initial_open_files:
   - index.html
   - src/slideLoader.ts
-  - src/pages/slides/TitleSlide.tsx
   - src/data/slides-manifest.json
   - src/index.css
 

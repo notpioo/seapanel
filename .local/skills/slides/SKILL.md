@@ -5,6 +5,8 @@ description: Instructions for building and editing slide deck artifacts in the R
 
 # Slides -- Presentation Decks in Code
 
+
+
 <context>
 A slides artifact is a React + Tailwind CSS application that functions as a slide deck. Each slide is a separate React component file in `src/pages/slides/`, rendered at a unique `/slideN` URL route (e.g., `/slide1`, `/slide2`). This React app runs inside a workspace app preview, where the preview wraps it in a custom slide viewer / editor UI. That UI provides a thumbnail sidebar for navigation, PPTX export, and visual editing controls that let the user reorder slides, add or delete slides, and edit visual properties like colors and text directly from the Replit interface.
 
@@ -270,12 +272,23 @@ These constraints are non-negotiable. Every slide must comply. Content must be s
 **Interactivity:**
 
 - No buttons of any kind (no CTAs, no "Learn more", no "Get started")
-- No hover effects, tooltips, or interactive states
+- No hover effects, tooltips, or interactive states (except on allowed interactive elements below)
 - **Default: no animations.** Do not add animations, transitions, fade-ins, slide-ups, framer-motion, CSS transitions, or keyframe animations unless the user explicitly requests them. See the `<animations>` section for rules when the user does request animations.
-- No dynamic behavior (no `onClick`, no `onHover`, no state-driven visibility changes)
+- No dynamic behavior (no `onClick`, no `onHover`, no state-driven visibility changes) except for allowed interactive elements below
 - No form elements, toggles, or inputs
 - No scrolling on any slide -- everything fits entirely within one viewport frame
 - No "presentation viewer" chrome or slide-sizing wrapper inside individual slide components -- slides are always full screen (`w-screen h-screen`). The deployment viewer at `/` handles presentation framing externally.
+
+**Allowed interactive elements:**
+
+The following elements are permitted and may include their natural interactive behaviors (hover states, click handlers, tooltips, etc.):
+
+- **Charts and data visualizations** -- Use libraries like Recharts, Chart.js, or D3. Charts may include hover tooltips, legends, and interactive data points. Ensure charts render their data visibly on initial load for screenshot export compatibility.
+- **Tables** -- Data tables may include sortable columns, scrollable overflow for large datasets (within the table container only, not the slide itself), and hover-highlighted rows.
+- **Links** -- Anchor tags (`<a href="...">`) are allowed for linking to external URLs. Style them to be visually identifiable (underline, distinct color). Use `target="_blank" rel="noopener noreferrer"`.
+- **Embedded videos** -- Use `<iframe>` or `<video>` tags for embedding video content (YouTube, Vimeo, or self-hosted). Videos must not autoplay. Provide a visible poster/thumbnail so the slide looks complete in screenshot export.
+
+These elements are exceptions to the general no-interactivity rule. All other interactivity restrictions still apply -- do not use these exceptions as a loophole to add general-purpose buttons, navigation controls, or app-like UI.
 
 **Frame containment:**
 

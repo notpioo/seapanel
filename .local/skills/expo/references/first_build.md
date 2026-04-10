@@ -6,7 +6,7 @@ When building a new Expo app for the first time, follow this sequence for speed 
 ## Build Sequence
 
 1. **Generate images FIRST** — kick off ALL image generation via `generateImageAsync` (from the `media-generation` skill) in a single batch before writing any code. This includes:
-   - App icon and splash icon. Save to `assets/images/icon.png` and `assets/images/splash-icon.png`.
+   - App icon & splash. Save to `assets/images/icon.png`.
    - If the app is image-heavy (streaming, social, media, recipes, travel, etc.), also generate 2-3 content placeholder images for the initial UI (e.g., hero banners, category thumbnails, placeholder cards). Save to `assets/images/`. Do NOT over-generate — 2-3 images max for first build content.
    Images generate in the background while you continue building.
 

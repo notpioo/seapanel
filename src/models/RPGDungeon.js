@@ -1,28 +1,72 @@
 const mongoose = require('mongoose');
 
+const tierSchema = new mongoose.Schema({
+    startFloor: { type: Number, required: true },
+    enemyName:  { type: String, required: true },
+    bossName:   { type: String, required: true },
+}, { _id: false });
+
 const rpgDungeonSchema = new mongoose.Schema({
-    dungeonId: { type: String, required: true, unique: true }, // ID unik, misal: 'daily_gold'
-    name: { type: String, required: true }, // Nama Dungeon
-    description: { type: String, default: '' },
+    dungeonId:    { type: String, required: true, unique: true },
+    name:         { type: String, required: true },
+    description:  { type: String, default: '' },
+    minLevel:     { type: Number, default: 1 },
 
-    // Requirement
-    minLevel: { type: Number, default: 1 },
+    // Enemy flavor per tier (sorted ascending by startFloor)
+    tiers: [tierSchema],
 
-    // Entry Cost (Tiket Masuk)
-    ticketItemId: { type: String, default: null }, // Item ID tiket (misal: 'dungeon_key'). Null = Gak butuh item.
-    ticketCount: { type: Number, default: 0 }, // Jumlah tiket yg dibutuhkan
-    goldCost: { type: Number, default: 0 }, // Atau bayar pake Gold
+    // Linear stat scaling per floor
+    baseHP:      { type: Number, default: 120 },
+    baseATK:     { type: Number, default: 10  },
+    hpPerFloor:  { type: Number, default: 22  },
+    atkPerFloor: { type: Number, default: 2   },
 
-    // Battle Config
-    bossId: { type: String, required: true }, // ID Musuh/Boss yang dilawan
+    // Boss multiplier (every 5th floor)
+    bossHPMult:  { type: Number, default: 2.5 },
+    bossATKMult: { type: Number, default: 1.8 },
 
-    // Clear Rewards (Hadiah Tambahan selain drop boss)
-    expReward: { type: Number, default: 0 },
-    goldReward: { type: Number, default: 0 },
+    // Reward per floor
+    baseExp:      { type: Number, default: 50 },
+    baseGold:     { type: Number, default: 30 },
+    expPerFloor:  { type: Number, default: 15 },
+    goldPerFloor: { type: Number, default: 8  },
+    bossExpMult:  { type: Number, default: 3  },
+    bossGoldMult: { type: Number, default: 3  },
 
-    // Status
-    isActive: { type: Boolean, default: true }
+    // Drop format: "itemId:rate" — rate 0-100
+    normalDrop: { type: String, default: '' },
+    bossDrop:   { type: String, default: '' },
 
+    isActive: { type: Boolean, default: true },
 }, { timestamps: true });
+
+// Helper: get tier name for a given floor
+rpgDungeonSchema.methods.getTierForFloor = function(floor) {
+    const sorted = [...this.tiers].sort((a, b) => b.startFloor - a.startFloor);
+    return sorted.find(t => floor >= t.startFloor) || this.tiers[0];
+};
+
+// Helper: compute enemy stats for a given floor
+rpgDungeonSchema.methods.getFloorStats = function(floor) {
+    const isBoss = floor % 5 === 0;
+    const tier   = this.getTierForFloor(floor);
+
+    let hp  = Math.round(this.baseHP  + (floor - 1) * this.hpPerFloor);
+    let atk = Math.round(this.baseATK + (floor - 1) * this.atkPerFloor);
+    if (isBoss) {
+        hp  = Math.round(hp  * this.bossHPMult);
+        atk = Math.round(atk * this.bossATKMult);
+    }
+
+    const exp  = Math.round((this.baseExp  + (floor - 1) * this.expPerFloor)  * (isBoss ? this.bossExpMult  : 1));
+    const gold = Math.round((this.baseGold + (floor - 1) * this.goldPerFloor) * (isBoss ? this.bossGoldMult : 1));
+
+    return {
+        floor, isBoss,
+        enemyName: isBoss ? tier.bossName : tier.enemyName,
+        hp, atk, exp, gold,
+        drop: isBoss ? this.bossDrop : this.normalDrop,
+    };
+};
 
 module.exports = mongoose.model('RPGDungeon', rpgDungeonSchema);

@@ -33,6 +33,7 @@ const { getDicePage } = require('./views/dice');
 const casinoRoutes = require('./routes/casino');
 const miningPassRoutes = require('./routes/mining_pass');
 const bankRoutes = require('./routes/bank');
+const dungeonRoutes = require('./routes/dungeon');
 const { getMiningGamePage } = require('./views/mining_play');
 const { getMiningLeaderboardPage } = require('./views/mining_leaderboard');
 
@@ -1258,6 +1259,7 @@ class WebServer {
         casinoRoutes.setupRoutes(this.app, this.requireAuth.bind(this));
         miningPassRoutes.setupRoutes(this.app, this.requireAuth.bind(this));
         bankRoutes.setupRoutes(this.app, this.requireAuth.bind(this));
+        dungeonRoutes.setupRoutes(this.app, this.requireAuth.bind(this));
 
         this.app.get('/casino-config', this.requireAuth(['admin']), async (req, res) => {
             const session = this.getSession(req.cookies.token);

@@ -116,7 +116,7 @@ Example -- a pricing card is a "Card / Panel", so use a snug iframe (see [Iframe
 ```
 ### Step 4: Layout and focus
 
-Before embedding iframes, call `get_canvas_state` to see what already exists on the board and find empty space. Then place your iframes in an unoccupied region.
+Before embedding iframes, call `getCanvasState()` to see what already exists on the board and find empty space. Then place your iframes in an unoccupied region.
 
 If an iframe is created while the workflow is still booting, rely on the canvas host's iframe retry behavior plus the dev server's automatic 404 rescan to recover. Do not ask the user to refresh the whole board.
 
@@ -124,23 +124,19 @@ If an iframe is created while the workflow is still booting, rely on the canvas 
 
 **Multi-viewport layouts.** When showing the same component at different screen sizes, place them in a row using the viewport presets (Mobile: 390x844, Tablet: 768x1024, Desktop: 1280x720) with ~50px gutters.
 
-**Offer to show after embedding.** After creating all iframe shapes, tell the user what you placed and ask if they'd like you to focus on the new layout. Don't auto-focus -- moving the viewport while the user is working is disorienting. When the user confirms, call `focus_canvas_shapes` with all new shape IDs and `animate_ms: 500`.
-
 **Do not call `suggestDeploy()`.** The mockup sandbox is a local prototyping tool and is not meant to be deployed — if the user asks to publish or deploy canvas/mockup content, integrate/graduate it into a real app artifact first.
 
 **Never share dev domain URLs in chat.** Dev URLs (`*.replit.dev`, `$REPLIT_DEV_DOMAIN`) are internal — use them only in tool calls (iframe shapes, subagent tasks), never in user-facing messages.
 
-**Present the artifact.** After all mockups are embedded and the workflow is running, look up the artifact and present it so the user can see it in the preview pane:
+# Step 5: Verification and Presentation
+
+**Check system logs.** Always check the system logs to ensure no iframe previews are broken, since broken iframes cause an error overlay across the canvas. If you see iframe-related errors, fix them before proceeding and restart the workflow.
+
+**CRITICAL — Always present after canvas work.** After all mockups are embedded, you MUST call `presentArtifact` with the shape IDs. This is how the user navigates to your work — without it, they cannot find the shapes you placed. Never skip this step. Never ask the user if they want to see the shapes — just present.
 
 ```javascript
-// Present the completed mockup artifact in the preview pane so the user can view and interact with it.
-await presentArtifact({ artifactId });
-```
-/*
-- This function reveals the live mockup canvas to the user.
-- Call this after embedding all mockup iframes and finishing workflow setup.
-- artifactId should be the ID of the registered mockup-sandbox artifact.
-*/
+// ALWAYS call this after creating or updating canvas shapes.
+await presentArtifact({ artifactId, shapeIds: ["shape-id-1", "shape-id-2"] });
 ```
 
 ## Architecture
@@ -364,9 +360,10 @@ Every mockup request -- whether handled directly or via subagents -- should show
 
 1. Read the canvas state to find empty space
 2. Immediately place iframe(s) with `state: "building"` and `componentName` at the expected sizes
-3. Proceed with component development (direct or via subagents)
-4. Once a component is ready, update the iframe with `url`, `componentPath`, and `state: "live"`
-5. Restart the workflow once all components are created
+3. Proceed with component development.
+   - For direct builds, set the iframe `state: "live"` once the component is ready and the URL/component metadata can be filled in.
+   - For subagent builds, ask the subagent to set the iframe `state: "live"` in its request so the preview updates as quickly as possible.
+4. Check the system logs for iframe-related issues, fix any problems, and restart the workflow once all components are created.
 
 **Flow for modifying existing components:**
 
@@ -435,7 +432,7 @@ Parent: Place iframe(s) with state: "building" on canvas
     → Create component file
     → Restart workflow
     → Update iframe with URL + state: "live"
-    → Offer to focus
+    → presentArtifact with shapeIds
 ```
 
 For modifications to existing mockups, set `state: "modifying"` on the iframe, edit the file in place, then set `state: "live"` when done. **Do not** create a new file for modifications. If the user wants to preserve the old version for comparison, *then* duplicate the file into a new variant first.
@@ -447,10 +444,10 @@ Use when the user wants multiple visual options for the same component or page.
 ```text
 Parent: Place iframes with state: "building" on canvas (one per variant, in a row)
 Parent: Establish requirements, seed each variant direction
-    ├──→ DESIGN subagent: "Minimal" variant → set iframe URL + state: "live"
-    ├──→ DESIGN subagent: "Bold" variant → set iframe URL + state: "live"
-    └──→ DESIGN subagent: "Gradient" variant → set iframe URL + state: "live"
-Parent: Restart workflow once all subagents complete
+    ├──→ DESIGN subagent: "Minimal" variant
+    ├──→ DESIGN subagent: "Bold" variant
+    └──→ DESIGN subagent: "Gradient" variant
+Parent: Check system logs, fix issues and restart workflow once all subagents complete
 ```
 
 **Parent responsibilities:**
@@ -459,7 +456,7 @@ Parent: Restart workflow once all subagents complete
 2. Create the folder (e.g., `mockups/pricing-cards/`)
 3. Place iframes with `state: "building"` in a horizontal row on the canvas, one per variant, with stable shape IDs
 4. Seed each subagent with: the design brief, target file path, shape ID to update, dev URL, and the specific design hypothesis for this variant and ask it to set the iframe live.
-5. After all subagents complete: restart workflow, offer to focus
+5. After all subagents complete: restart workflow, call `presentArtifact` with all shape IDs.
 
 **Subagent task format:**
 
@@ -505,7 +502,7 @@ When done, update the canvas iframe to show the real preview:
 2. Create the project folder and `_shared/` subfolder
 3. Build shared layout components (`AppLayout.tsx` with a content slot, `Navbar.tsx`, `Sidebar.tsx`, etc.)
 4. Fan out DESIGN subagents for each page, passing `_shared/` file paths, shape ID, and dev URL
-5. After all subagents complete: restart workflow, offer to focus
+5. After all subagents complete: restart workflow, call `presentArtifact` with all shape IDs.
 
 **Multi-page subagent task format (only when user explicitly requests multiple pages):**
 
@@ -540,10 +537,11 @@ Each variant gets its own folder with its own `_shared/` components. One DESIGN 
 ```text
 Parent: Place iframes with state: "building" in a variant × page grid on canvas
 Parent: Define page list, seed each variant direction
-    ├──→ DESIGN subagent: Build entire crm-minimal/ → set iframe URLs + state: "live"
-    ├──→ DESIGN subagent: Build entire crm-bold/ → set iframe URLs + state: "live"
-    └──→ DESIGN subagent: Build entire crm-playful/ → set iframe URLs + state: "live"
-Parent: Restart workflow once all subagents complete
+    ├──→ DESIGN subagent: Build entire crm-minimal/
+    ├──→ DESIGN subagent: Build entire crm-bold/ 
+    └──→ DESIGN subagent: Build entire crm-playful/ 
+Parent: Checked the system logs and restart the workflow once all components are created 
+
 ```
 
 ```text
