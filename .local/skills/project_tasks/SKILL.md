@@ -57,7 +57,7 @@ const task = await getProjectTask({ taskRef: "#1" });
 // "Task #1 (Add authentication)"
 ```
 
-### updateProjectTask(taskRef, title=None, description=None, dependsOn=None)
+### updateProjectTask(taskRef, title=None, description=None, dependsOn=None, artifactKinds=None)
 
 Update an existing project task's content. All fields are optional - only provided fields are updated.
 
@@ -69,13 +69,18 @@ Update an existing project task's content. All fields are optional - only provid
 | `title` | str | No | New title |
 | `description` | str | No | New description |
 | `dependsOn` | array of str | No | Full list of dependency task refs (replaces existing) |
+| `artifactKinds` | array | No | Updated artifact kind tags for the task. Pass `[]` to clear stale artifact tags when the task is no longer artifact-producing. |
 
 **Returns:** Dict with `taskRef`, `title`, `description`, `state`, `createdAt`, `updatedAt`
 
 **Example:**
 
 ```javascript
-await updateProjectTask({ taskRef: "#1", title: "Updated title" });
+await updateProjectTask({
+  taskRef: "#1",
+  title: "Updated title",
+  artifactKinds: ["web"],
+});
 ```
 
 ### markTaskInProgress(taskRef)
@@ -173,6 +178,7 @@ Each task object:
 | `title` | str | Yes | Short title for the task |
 | `filePath` | str | Yes | Path to the plan file (e.g. `.local/tasks/payment-integration.md`). The file content becomes the task description. |
 | `dependsOn` | array | No | List of `id` values from other tasks in this batch, or task refs (`"#1"`, `"#2"`) of already-existing accepted tasks. Never depend on existing PROPOSED tasks — only on tasks that are PENDING or later. Tasks within the same batch may depend on each other freely. |
+| `artifactKinds` | array | No | Artifact kind strings for tasks that create one or more new artifacts. Valid values: `web`, `mobile`, `video`, `slides`, `automation`, `data-app`, `design`. Omit this field for code-only or non-artifact work. |
 
 **Returns:** List of created task dicts with `taskRef`, `title`, `description`, `state`, `dependsOn`, `createdAt`, `updatedAt`
 
@@ -183,8 +189,9 @@ Each task object:
 const created = await bulkCreateProjectTasks({
     tasks: [
         {
-            title: "Payment integration",
-            filePath: ".local/tasks/payment-integration.md",
+            title: "Launch microsite",
+            filePath: ".local/tasks/launch-microsite.md",
+            artifactKinds: ["web"],
         },
     ]
 });
@@ -218,7 +225,9 @@ multiple tasks if the user explicitly asks for them or the request contains
 clearly independent, unrelated goals.
 
 Dependencies are not declared in the plan file. Pass them via `dependsOn`
-when creating or updating tasks.
+when creating or updating tasks. Artifact tags are also not declared in the
+plan file. Pass them via `artifactKinds` when a task creates one or more new
+artifacts.
 
 ### Plan body
 
@@ -229,7 +238,7 @@ with `#`. Then include these sections:
 - **Done looks like** — Observable outcomes when complete (what the user
   sees, not code-level details).
 - **Out of scope** — What is explicitly NOT included.
-- **Tasks** — Numbered list of implementation steps within this plan. These
+- **Steps** — Numbered list of implementation steps within this plan. These
   are internal steps for the executor agent, not separate project tasks.
 - **Relevant files** — Existing files discovered during investigation that
   the executor should start from. Use backtick-wrapped paths only, with no
@@ -244,14 +253,14 @@ declare that dependency via `dependsOn` rather than in the plan body. You
 may depend on existing tasks that are PENDING or later — never on existing
 PROPOSED tasks. Tasks within the same batch may depend on each other freely.
 
-Rules for the `## Tasks` section:
+Rules for the `## Steps` section:
 
-- Each task should be describable in 1-2 sentences.
+- Each step should be describable in 1-2 sentences.
 - Focus on what to build, not how to build it.
 - Do not include file paths, code snippets, CSS classes, or line-level edits
-  in task bullets. Put file references in `## Relevant files` instead.
+  in step bullets. Put file references in `## Relevant files` instead.
 - Draw clean boundaries so parallel executors will not create conflicting
-  changes. If two tasks would touch the same area, combine them into one
+  changes. If two steps would touch the same area, combine them into one
   project task.
 - If there is a critical architectural constraint the executor must follow,
   add a short note.
@@ -273,7 +282,7 @@ Add Stripe payment processing so users can upgrade to paid plans.
 - Invoicing and receipts (future work)
 - Multiple payment methods (Stripe only for now)
 
-## Tasks
+## Steps
 1. **Stripe backend integration** — Set up Stripe SDK, create endpoints for creating checkout sessions and handling webhooks.
 
 2. **Payment UI** — Build the checkout page with plan selection and Stripe Elements for card input.
@@ -348,8 +357,9 @@ Task management is how you coordinate work with the user. Follow these rules str
 const created = await bulkCreateProjectTasks({
     tasks: [
         {
-            title: "Payment integration",
-            filePath: ".local/tasks/payment-integration.md",
+            title: "Launch microsite",
+            filePath: ".local/tasks/launch-microsite.md",
+            artifactKinds: ["web"],
         },
     ]
 });

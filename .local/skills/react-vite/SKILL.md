@@ -16,6 +16,8 @@ Always follow these guidelines when building a React + Vite web application:
 
 ## First Build
 
+**You must use the design subagent for every react-vite first build — no exceptions.** This applies regardless of app size, complexity, or whether a backend is needed. "No backend" means skip OpenAPI/codegen, not skip the design subagent. "Simple app" means the subagent gets a simpler brief, not that you build the frontend yourself. Never build the frontend yourself to save time — the design subagent is the fast path.
+
 ### Step 1: Classify the app
 
 Before building, classify the app to decide how you and the DESIGN subagent split work. **The design subagent is always used** — the question is how much it owns.
@@ -78,6 +80,8 @@ Note: It's important to do all the DB schema/definitions/seeding and development
 #### For presentation-first apps (no backend)
 
 No OpenAPI, no codegen. Launch the design subagent immediately.
+
+If the user is creating a site for a real company, or wants to match an existing company/site, gather context before launching the design subagent: use `extractBranding` for brand tokens, `webFetch` on the homepage, about page, or key product pages for real messaging, and external-URL `screenshot` when the visual feel of the source site matters. Pass the distilled brand and product context into the brief, not raw tool output.
 
 1. Create the artifact and read the `design` skill
 2. Launch the design subagent (async) immediately — no codegen step needed. Follow the `design` skill's presentation-heavy delegation rules:

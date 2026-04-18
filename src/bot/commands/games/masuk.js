@@ -76,6 +76,12 @@ module.exports = {
                     if (received.length > 0) txt += `\n🎁 *DROP:* ${received.join(', ')}\n`;
                 }
 
+                // Scroll reward on boss floors (every 5th floor)
+                if (floorStats.isBoss) {
+                    player.scrolls = (player.scrolls || 0) + 1;
+                    txt += `📜 *+1 Scroll* dari boss dungeon!\n`;
+                }
+
                 // Advance floor
                 player.dungeonFloor = floor + 1;
                 await player.save();

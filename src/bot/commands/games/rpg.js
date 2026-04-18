@@ -35,7 +35,7 @@ module.exports = {
                 player = new RPGPlayer({ phoneNumber: sender });
                 player.heroes.push(starterId);
                 await player.save();
-                return reply(`*Selamat Datang di Sanka Chronicles!*\n\nKamu memulai petualangan dengan *${starterHero.name}*!\nKetik *.battle* untuk mulai!\n\n*Commands:*\n.rpg - Profil & Stats\n.battle - Lawan monster\n.gacha - Summon hero (${config.gachaPrice} Gold)\n.heroes - Koleksi hero`);
+                return reply(`*Selamat Datang di Sanka Chronicles!*\n\nKamu memulai petualangan dengan *${starterHero.name}*!\nKetik *.battle* untuk mulai!\n\n*Commands:*\n.rpg - Profil & Stats\n.battle - Lawan monster\n.gacha - Summon hero (1 Scroll)\n.daily - Klaim Scroll harian\n.heroes - Koleksi hero`);
             }
 
             const stats = player.calcStats(heroesMap, config, itemsMap);
@@ -55,6 +55,7 @@ module.exports = {
             txt += `║ ATK   : ${fmt(stats.atk)}${itemAtkText}\n`;
             txt += `╠═══════════════════╣\n`;
             txt += `║ Gold  : ${fmt(player.gold)}\n`;
+            txt += `║ Scroll: ${player.scrolls || 0} 📜\n`;
             txt += `║ EXP   : ${player.exp} / ${nextExp}\n`;
             txt += `║ Stage : ${player.currentChapter}-${player.currentStage}\n`;
             txt += `║ Chapter: ${chapterName}\n`;
@@ -63,7 +64,8 @@ module.exports = {
             txt += `║ Heroes: ${player.heroes.length}${urBadge}\n`;
             txt += `╚═══════════════════╝\n\n`;
             txt += `*.battle* - Lawan monster\n`;
-            txt += `*.gacha* - Summon hero (${config.gachaPrice}G)\n`;
+            txt += `*.daily* - Klaim Scroll harian\n`;
+            txt += `*.gacha* - Summon hero (1 Scroll)\n`;
             txt += `*.rbag* - Inventory\n`;
             txt += `*.recipe* - Crafting`;
 

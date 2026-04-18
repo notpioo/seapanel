@@ -1,0 +1,123 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   ███████╗ █████╗ ███╗   ██╗██╗  ██╗ █████╗                  ║
+║   ██╔════╝██╔══██╗████╗  ██║██║ ██╔╝██╔══██╗                 ║
+║   ███████╗███████║██╔██╗ ██║█████╔╝ ███████║                 ║
+║   ╚════██║██╔══██║██║╚██╗██║██╔═██╗ ██╔══██║                 ║
+║   ███████║██║  ██║██║ ╚████║██║  ██╗██║  ██║                 ║
+║   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝                 ║
+║                                                              ║
+║              BOT DEPLOYER - Powered by Sanka-Baileys         ║
+╚══════════════════════════════════════════════════════════════╝
+
+[DEBUG] RAW PORT: 5000
+[36m[2026-04-18T17:20:28.552Z] [INFO] [Main] Starting Sanka Bot Deployer...[0m
+[36m[2026-04-18T17:20:28.552Z] [INFO] [Main] Bot Name: NoMercy[0m
+[36m[2026-04-18T17:20:28.552Z] [INFO] [Main] Version: 1.0.0[0m
+[36m[2026-04-18T17:20:28.552Z] [INFO] [Main] Closing early health server to hand off to WebServer...[0m
+[36m[2026-04-18T17:20:28.553Z] [INFO] [Main] Early health server closed.[0m
+[36m[2026-04-18T17:20:28.563Z] [INFO] [WebServer] Starting web server on 0.0.0.0:5000...[0m
+[32m[2026-04-18T17:20:28.568Z] [SUCCESS] [WebServer] Web server running at http://0.0.0.0:5000[0m
+[36m[2026-04-18T17:20:28.568Z] [INFO] [WebServer] Login with admin/admin123 or user/user123[0m
+[36m[2026-04-18T17:20:28.568Z] [INFO] [Database] Connecting to MongoDB...[0m
+[36m[2026-04-18T17:20:28.850Z] [INFO] [WebServer] Client connected: dopvAaISu7ed35SqAAAB[0m
+[32m[2026-04-18T17:20:30.810Z] [SUCCESS] [Database] Connected to MongoDB successfully![0m
+[36m[2026-04-18T17:20:35.479Z] [INFO] [Main] Mining config synced (zones & resources up to date)[0m
+[36m[2026-04-18T17:20:35.702Z] [INFO] [Main] Settings loaded: Seana Bot (Prefix: .)[0m
+
+[36m███████  █████  ███    ██ ██   ██  █████[0m
+[36m██      ██   ██ ████   ██ ██  ██  ██   ██[0m
+[36m███████ ███████ ██ ██  ██ █████   ███████[0m
+[36m     ██ ██   ██ ██  ██ ██ ██  ██  ██   ██[0m
+[36m███████ ██   ██ ██   ████ ██   ██ ██   ██[0m
+[37mNote: SAYA HANYA MENYEDIAKAN BAILEYS SAYA, JANGAN TANYA APAPUN SOAL BOT LU YANG EROR!!!![0m
+[37mTerimakasih Telah Menggunakan Baileys saya.[0m
+[31mKunjungi website saya disini
+https://sankavollerei.com/
+https://link.sankanime.com/[0m
+
+[90mCopyright © 2026 Sanka Vollerei
+[0m
+
+[36m[2026-04-18T17:20:36.565Z] [INFO] [BotClient] Initializing WhatsApp connection...[0m
+[36m[2026-04-18T17:20:36.565Z] [INFO] [BotClient] Session folder path: /home/runner/workspace/sessions[0m
+[36m[2026-04-18T17:20:36.565Z] [INFO] [BotClient] Full session path: /home/runner/workspace/sessions/sanka-session[0m
+[36m[2026-04-18T17:20:36.565Z] [INFO] [BotClient] No existing session found, will generate QR code[0m
+[36m[2026-04-18T17:20:36.565Z] [INFO] [BotClient] Using MongoDB session: sanka-session[0m
+[36m[2026-04-18T17:20:36.976Z] [INFO] [BotClient] Got WA Web version: 2.3000.1033846690[0m
+[36m[2026-04-18T17:20:36.976Z] [INFO] [BotClient] Using WA version: 2.3000.1033846690[0m
+[36m[2026-04-18T17:20:36.980Z] [INFO] [BotClient] Creating socket with config...[0m
+[36m[2026-04-18T17:20:37.019Z] [INFO] [CommandLoader] Loaded 33 commands[0m
+[36m[2026-04-18T17:20:37.026Z] [INFO] [CommandLoader] Loaded 45 commands[0m
+[36m[2026-04-18T17:20:37.030Z] [INFO] [CommandLoader] Loaded 54 commands[0m
+[36m[2026-04-18T17:20:37.033Z] [INFO] [CommandLoader] Loaded 61 commands[0m
+[36m[2026-04-18T17:20:37.046Z] [INFO] [CommandLoader] Loaded 78 commands[0m
+[36m[2026-04-18T17:20:37.046Z] [INFO] [CommandLoader] Loaded 78 commands[0m
+[36m[2026-04-18T17:20:37.046Z] [INFO] [WebServer] BotClient injected to WebServer[0m
+[32m[2026-04-18T17:20:37.047Z] [SUCCESS] [Main] Application started successfully![0m
+[36m[2026-04-18T17:20:37.047Z] [INFO] [BotClient] Connection state: connecting[0m
+[36m[2026-04-18T17:20:37.706Z] [INFO] [BotClient] ✅ QR code generated! Sending to web panel...[0m
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▄█▀▄█▄▄ ███▀███▄▄ █▀▄ ▄█▄▀█▀█ ███ ▄▄█ ▄ ██ ▄▄▄▄▄ █
+█ █   █ █ ▄ ▄▄▀█▄█ ▀▄█▄█▀▀ ██▄ ▀▀▄▀ ▀▀▄▀▄▄██ ▄▀▄ ██ █   █ █
+█ █▄▄▄█ █▄  ▀▄▀▄▀▀█  ▀   █▀ ▄▄▄ █▄▀█ █  ▄█ ▀ ▄▄▀▄██ █▄▄▄█ █
+█▄▄▄▄▄▄▄█▄█ ▀ ▀ █▄▀▄▀▄█ ▀▄█ █▄█ ▀ ▀ █ █▄▀ ▀ ▀▄▀ █ █▄▄▄▄▄▄▄█
+█    ▀█▄▀▄█ ▄▄█▀ █ █▀▄  ▀ ▀▄▄▄   █ ▄▀█ ▄▄  ▀ ▀▄▄▀  ██ ▄ █ █
+█▀▄█▀▄ ▄█▄  ▄  ▀▀▀ ██ ▄▄██▀▄▀ ▀▀▀ ███▀▀ █▀ ▄ ▀ ▄█▄▀█▄  ▄▄▄█
+█▀▀█▀ ▄▄▀▄  █▄▄  ▄█▄ ▀█▄▄▄▀ ▀██▀▄█ █ ▄ ▀▀█▄▄ ▀ ███▀ █▀█▄███
+█▄ ▄▀▄█▄ █▀ ▄ ██ ▄ ▄▄▄▀▀█ █▄ ▄█▀▀ █▄▄█▄█▀▀▄█▄▀█▄▀  █▄▄  ███
+█ ▀▄  ▀▄▀▄██ ▄▄ ▀ ██▄▄▄▀█▄ ▀▄▄ █▄▄▄▀███▄▄█ ▄ ▄▀  █▄█▄▀▄ ▄ █
+█▄ ▄█▀▀▄▀▄▀▄▀▀▀▀██▀ ▀ ▄▄  ▀ █ ▀▀ ██▄▄ ▀▀███▄ █     ▄▀██▄▀▀█
+██▀▀  ▄▄█  ▀▄█ ██ ▄▀██▄▄▀█ ▀▄ ▀ █▀ ▄██ ▄  ▀ ▄██▄▄ ▀█  █▄▀ █
+█▄█ ▄▀▄▄▄▄▀▀█▀▄▄▀▄█▀ ▄▀▄  █▀▄▀▀▄ █ ▄▀▀█ ▀█ █▀▀█▄▄██▄▄▀▀▄█▄█
+██ ▀▀██▄    █ ▄▄█▄  █  ▀█▄▀██▀▀█▄▄       █▄▄▀▀▀█ ██ █▀ █▄▄█
+█▀▀ █ ▄▄▄ █ ▀▄██  ▄▄▀▀█▄█ ▀ ▄▄▄ █ █  ▀█ ██▄ █▀▀▀█ ▄▄▄ ▀▀███
+███▀▄ █▄█ ▄█▀▀▀▄▀▀█▄██▀▀ ▄█ █▄█   ▀▀██▄▄▄▀ ▄ ▄█ █ █▄█ █▄▀▄█
+█▄█▄▄▄▄▄  ▀▄▄ ▄ ▄▀█▀  ▄▄  █      ▄▀ ▀▄█   █▄███▄▄ ▄▄▄▄▄▄ ██
+█▄▀▀ █▄▄▀▀▄▀▄ ██▄█ ▀█▄█ ▀▀█ ▄▄▀▀▀▀ ▄ ▀▀▄▄▄▀ ██▄▄▀█▀▄▄██▀▄▀█
+█ ██▀ ▀▄█▀ ██▄█▄▀  █  █▀▄█▄█▄▀ █▀██▄▀█   ▄█ ▄██▀ ▀ ▄ ▄▄▄▄▄█
+█▀▄█ ██▄█▀▄█▀▀▄ ██▄▄▀█▀█ ▄▄ ██▀▀ █▄█▄ ▀ ▄▀▄█▄▀█▄▀▄█▄▀█ ▀█▄█
+██▀▀█  ▄▄▀▄▄█▄▀█ ▄▀▀  ▀█▄▀▄  ▄ ▀▀█▀█ ▄▄▀██▀▀██▄█▀ ▀█ ▄ ▀█▄█
+█▄▄▄▄█ ▄▄▄▄▄▀█   ▀██ █▄██▄▀  ▀ ██▄▄▀ ▀▄▄▄█ █    ▄█▀  ▀▄██ █
+█ █▀██▀▄▄█ ██   ▄▄█▄ ▀█ ▀ ██▄▀  █████ ▀█ ▀▄▀▀▀ ▄▀ ▄█▀▀▄▄█▀█
+███▄▀▄▄▄▄▀ ▀█▄▄▄ █▀▀ █ █▄ ▄▀██▀▄▀███▀▀▀▄▄▄█▀▀█▄▄▀   ▄▄ █ ▄█
+█ ▀ ▀▀▄▄ █▄█▄ ▄▄▄▀▄▀▀████ ▀▀▄█▀█▀█▀██ █▄▄▀▀▄▀  █ ▀▄▄▀▄▀▄ ▄█
+███████▄▄ █ ▄▀▄█▀██ ▄ █▀ █▀ ▄▄▄ ▄█ █▄ ▀ ▀▀▄▄▄██▄▀ ▄▄▄ ▀█ ▄█
+█ ▄▄▄▄▄ ██▄▀ ▀▄▀████ █▄ ███ █▄█  ▀▄ █▄▄▀▀  ▀▀█▄█▄ █▄█ ▀▀ ██
+█ █   █ █▀█▄ ██▀▀███ ▄▀█ ▀ ▄ ▄  █   ▀▀█▄▄▀▀▄  ▄▀▀ ▄ ▄▄▄▀▀██
+█ █▄▄▄█ █ ▄▄█ █     ▄▀▄▄█▀▀▀▀▀█▀█▀▀ █ ▀▄██▀█▄▀▀ ▀▄█ ▀▀███▀█
+█▄▄▄▄▄▄▄█▄█▄████▄▄▄█▄█▄▄▄▄███▄███▄██▄███▄▄██████▄██▄▄▄▄▄███
+
+[36m[2026-04-18T17:20:43.702Z] [INFO] [BotClient] Connection state: close[0m
+[33m[2026-04-18T17:20:43.702Z] [WARN] [BotClient] Disconnected. Status code: 515[0m
+[31m[2026-04-18T17:20:43.704Z] [ERROR] [BotClient] Error details: Stream Errored (restart required)[0m
+[36m[2026-04-18T17:20:43.704Z] [INFO] [BotClient] Reconnecting in 3s... (attempt 1)[0m
+[36m[2026-04-18T17:20:46.704Z] [INFO] [BotClient] Initializing WhatsApp connection...[0m
+[36m[2026-04-18T17:20:46.705Z] [INFO] [BotClient] Session folder path: /home/runner/workspace/sessions[0m
+[36m[2026-04-18T17:20:46.705Z] [INFO] [BotClient] Full session path: /home/runner/workspace/sessions/sanka-session[0m
+[36m[2026-04-18T17:20:46.705Z] [INFO] [BotClient] No existing session found, will generate QR code[0m
+[36m[2026-04-18T17:20:46.705Z] [INFO] [BotClient] Using MongoDB session: sanka-session[0m
+[36m[2026-04-18T17:20:47.005Z] [INFO] [BotClient] Got WA Web version: 2.3000.1033846690[0m
+[36m[2026-04-18T17:20:47.005Z] [INFO] [BotClient] Using WA version: 2.3000.1033846690[0m
+[36m[2026-04-18T17:20:47.006Z] [INFO] [BotClient] Creating socket with config...[0m
+[36m[2026-04-18T17:20:47.010Z] [INFO] [BotClient] Connection state: connecting[0m
+[36m[2026-04-18T17:20:50.002Z] [INFO] [BotClient] Connection state: open[0m
+[32m[2026-04-18T17:20:50.002Z] [SUCCESS] [BotClient] ✅ Connected as: Seana Bot[0m
+[GameNotifier] Polling service started (tick every 15s)
+Failed to decrypt message with any known session...
+Session error:Error: Bad MAC Error: Bad MAC
+    at Object.verifyMAC (/home/runner/workspace/node_modules/libsignal/src/crypto.js:87:15)
+    at SessionCipher.doDecryptWhisperMessage (/home/runner/workspace/node_modules/libsignal/src/session_cipher.js:250:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SessionCipher.decryptWithSessions (/home/runner/workspace/node_modules/libsignal/src/session_cipher.js:147:29)
+    at async 6285133272848.0 [as awaitable] (/home/runner/workspace/node_modules/libsignal/src/session_cipher.js:171:28)
+    at async _asyncQueueExecutor (/home/runner/workspace/node_modules/libsignal/src/queue_job.js:20:29)
+[33m[2026-04-18T17:24:02.044Z] [WARN] [Main] Received SIGTERM. Shutting down gracefully...[0m
+[36m[2026-04-18T17:24:02.045Z] [INFO] [BotClient] Disconnecting bot...[0m
+[36m[2026-04-18T17:24:02.048Z] [INFO] [BotClient] Connection state: close[0m
+[33m[2026-04-18T17:24:02.048Z] [WARN] [BotClient] Disconnected. Status code: 401[0m
+[31m[2026-04-18T17:24:02.048Z] [ERROR] [BotClient] Error details: Intentional Logout[0m
+[33m[2026-04-18T17:24:02.048Z] [WARN] [BotClient] Logged out. Clearing session and restarting...[0m
+[36m[2026-04-18T17:24:02.048Z] [INFO] [BotClient] Clearing session sanka-session from MongoDB...[0m
+[36m[2026-04-18T17:24:02.287Z] [INFO] [BotClient] Session cleared successfully[0m

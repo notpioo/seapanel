@@ -56,6 +56,18 @@ module.exports = {
 
                 if (levelUp) txt += `*LEVEL UP!* Sekarang Level ${player.level}!\n`;
 
+                // Scroll drop: boss = +2, normal = 8% chance
+                let scrollGained = 0;
+                if (stageData.isBoss) {
+                    scrollGained = 2;
+                } else if (Math.random() * 100 < 8) {
+                    scrollGained = 1;
+                }
+                if (scrollGained > 0) {
+                    player.scrolls = (player.scrolls || 0) + scrollGained;
+                    txt += `📜 *+${scrollGained} Scroll* didapat!\n`;
+                }
+
                 // Handle Drops
                 if (stageData.drop) {
                     const drops = stageData.drop.split(',');
@@ -63,9 +75,8 @@ module.exports = {
 
                     for (const dropStr of drops) {
                         const [itemName, rateStr] = dropStr.trim().split(':');
-                        const rate = rateStr ? parseInt(rateStr) : 100; // Default 100% if no rate specified
+                        const rate = rateStr ? parseInt(rateStr) : 100;
 
-                        // Check chance
                         if (Math.random() * 100 < rate) {
                             const currentQty = player.inventory.get(itemName) || 0;
                             player.inventory.set(itemName, currentQty + 1);
@@ -78,10 +89,7 @@ module.exports = {
                     }
                 }
 
-                // Check for Level Up again (just in case exp overflow, but current logic handles one level)
-
                 const isLastStage = player.currentStage >= chapter.stages.length;
-
 
                 if (isLastStage) {
                     txt += `\n*CHAPTER ${player.currentChapter} CLEAR!*\n`;

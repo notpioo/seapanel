@@ -22,6 +22,12 @@ const rpgPlayerSchema = new mongoose.Schema({
     // Dungeon Progress
     dungeonFloor: { type: Number, default: 1 },
 
+    // Scroll (Gacha Currency)
+    scrolls: { type: Number, default: 0 },
+
+    // Daily Claim
+    lastDaily: { type: Date, default: null },
+
 }, { timestamps: true });
 
 // Hitung stats berdasarkan data hero dan item dari DB

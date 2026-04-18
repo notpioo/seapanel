@@ -27,6 +27,7 @@ const GuildBounty = require('./GuildBounty');
 const { MiningPassConfig, MiningPassPlayer } = require('./MiningPass');
 const BankExchange = require('./BankExchange');
 const AIMode = require('./AIMode');
+const GameNotifConfig = require('./GameNotifConfig');
 
 module.exports = {
     User,
@@ -54,5 +55,6 @@ module.exports = {
     MiningPassConfig,
     MiningPassPlayer,
     BankExchange,
-    AIMode
+    AIMode,
+    GameNotifConfig
 };

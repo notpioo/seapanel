@@ -14,6 +14,7 @@ const config = require('../../config/bot.config');
 const Logger = require('../utils/logger');
 const MessageHandler = require('./handlers/message');
 const { Session } = require('../models');
+const gameNotifier = require('./utils/gameNotifier');
 
 const logger = new Logger('BotClient');
 
@@ -355,6 +356,13 @@ class BotClient {
 
         const user = this.socket.user;
         logger.success(`✅ Connected as: ${user?.name || user?.id || 'Unknown'}`);
+
+        // Start game notifier polling
+        if (gameNotifier.isRunning) {
+            gameNotifier.updateSocket(this.socket);
+        } else {
+            gameNotifier.start(this.socket);
+        }
 
         this.emitStatus({
             connected: true,
